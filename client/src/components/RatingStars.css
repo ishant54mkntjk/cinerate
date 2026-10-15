@@ -1,0 +1,16 @@
+.rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--gold);
+  background: rgba(212, 175, 55, 0.1);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.rating-star {
+  font-size: 12px;
+  transform: translateY(-1px);
+}

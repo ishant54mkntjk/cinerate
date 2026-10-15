@@ -1,0 +1,158 @@
+.details-backdrop {
+  height: 46vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.details-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 13, 0.2) 0%, var(--bg) 100%);
+}
+
+.details-content {
+  display: flex;
+  gap: 36px;
+  margin-top: -140px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.details-poster {
+  flex-shrink: 0;
+  width: 220px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.details-info {
+  padding-top: 150px;
+}
+
+.details-info h1 {
+  font-family: var(--font-display);
+  font-size: 44px;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.details-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.details-description {
+  max-width: 620px;
+  color: var(--text-dim);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.details-actions {
+  display: flex;
+  gap: 14px;
+}
+
+.details-reviews {
+  padding-bottom: 70px;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 720px;
+}
+
+.review-form {
+  max-width: 720px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.review-form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.review-form-row label {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.review-form-row input {
+  width: 70px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: var(--text);
+}
+
+.review-form textarea {
+  width: 100%;
+  min-height: 90px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  margin-bottom: 14px;
+}
+
+.review-form textarea:focus,
+.review-form-row input:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.review-login-hint {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.review-login-hint a {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.details-notfound {
+  padding: 100px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .details-content {
+    flex-direction: column;
+    margin-top: -90px;
+  }
+  .details-poster {
+    width: 150px;
+  }
+  .details-info {
+    padding-top: 20px;
+  }
+  .details-info h1 {
+    font-size: 30px;
+  }
+}
